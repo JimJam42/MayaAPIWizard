@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Framework">
+        <file alias="melCmdMain">templateFramework/plugins/melCommand/main.json</file>
+        <file alias="melCmdCpp">templateFramework/plugins/melCommand/cpp.json</file>
+        <file alias="melCmdH">templateFramework/plugins/melCommand/h.json</file>
+        <file alias="coreClassDef">templateFramework/general/coreClassDef.json</file>
+        <file alias="qtproj">templateFramework/general/qtproj.json</file>
+        <file alias="fileTransMain">templateFramework/plugins/fileTranslator/main.json</file>
+        <file alias="fileTransH">templateFramework/plugins/fileTranslator/h.json</file>
+        <file alias="cmake">templateFramework/general/cmake.json</file>
+        <file alias="fileTransUIScript">templateFramework/plugins/fileTranslator/uiScript.json</file>
+        <file alias="fileTransCpp">templateFramework/plugins/fileTranslator/cpp.json</file>
+        <file alias="nodeMain">templateFramework/plugins/node/main.json</file>
+        <file alias="nodeCpp">templateFramework/plugins/node/cpp.json</file>
+        <file alias="nodeH">templateFramework/plugins/node/h.json</file>
+        <file alias="nodeUITemplateScript">templateFramework/plugins/node/uiTemplateScript.json</file>
+        <file alias="swShaderCpp">templateFramework/plugins/swShader/cpp.json</file>
+        <file alias="swShaderH">templateFramework/plugins/swShader/h.json</file>
+        <file alias="swShaderMain">templateFramework/plugins/swShader/main.json</file>
+        <file alias="swShaderUIScript">templateFramework/plugins/swShader/uiScript.json</file>
+        <file alias="hwShaderCpp">templateFramework/plugins/hwShader/cpp.json</file>
+        <file alias="hwShaderH">templateFramework/plugins/hwShader/h.json</file>
+        <file alias="hwShaderMain">templateFramework/plugins/hwShader/main.json</file>
+        <file alias="hwShaderUIScript">templateFramework/plugins/hwShader/uiScript.json</file>
+        <file alias="hwShaderOverrideCpp">templateFramework/plugins/hwShader/overrideCpp.json</file>
+        <file alias="hwShaderOverrideH">templateFramework/plugins/hwShader/overrideH.json</file>
+        <file alias="emitterCpp">templateFramework/plugins/emitter/cpp.json</file>
+        <file alias="emitterH">templateFramework/plugins/emitter/h.json</file>
+        <file alias="emitterMain">templateFramework/plugins/emitter/main.json</file>
+        <file alias="emitterUIScript">templateFramework/plugins/emitter/uiTemplateScript.json</file>
+        <file alias="icon16">icon_0_01.iconset/icon_16x16.png</file>
+        <file alias="icon32">icon_0_01.iconset/icon_32x32.png</file>
+        <file alias="icon128">icon_0_01.iconset/icon_128x128.png</file>
+        <file alias="icon256">icon_0_01.iconset/icon_256x256.png</file>
+        <file alias="icon512">icon_0_01.iconset/icon_512x512.png</file>
+        <file alias="iconICNS">icon_0_01.icns</file>
+        <file alias="pageImage">images/intro_logo.png</file>
+    </qresource>
+</RCC>

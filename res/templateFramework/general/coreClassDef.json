@@ -1,0 +1,29 @@
+{
+    "guards" : [
+        "#ifndef __%_#_FILENAMECAPS_#_%_H__",
+        "#define __%_#_FILENAMECAPS_#_%_H__",
+        "#endif /* __%_#_FILENAMECAPS_#_%_H__ */"
+    ],
+
+    "classDef" : [
+        "class %_#_CLASSNAME_#_% : public %_#_INHERITFROM_#_%",
+        "{",
+        "public:",
+        "\t//Constructor for the plugin class - initialise any variables within the implementation of this function",
+        "\t%_#_CLASSNAME_#_%(%_#_CTRPARAMS_#_%);",
+        "\t// virtual destructor - destroy any allocated memory within the implementation of this function",
+        "\tvirtual ~%_#_CLASSNAME_#_%();",
+        "",
+        "\t// function prototypes required by the plugin",
+        "%_#_FNSPECFN_#_%",
+        "",
+        "\t// public attribute declaration",
+        "%_#_PUBLICATTRIBS_#_%",
+        "\t// static creator function that is called by Maya to create an instance of the plugin class",
+        "\tstatic %_#_CREATORRETTYPE_#_%* creator(%_#_CREATORPARAMS_#_%);",
+        "private:",
+        "\t// private attributes for this plugin",
+        "%_#_FNSPECATTRIBS_#_%",
+        "};"
+    ]
+}
