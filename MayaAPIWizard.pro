@@ -17,7 +17,10 @@ GENER_DIR = generators
 JSON_DIR = res/templateFramework
 
 DEBUG = 0
-UNIBUILD = 1
+NOMAYABUILD = 0
+
+BOOST_INCLUDE_DIR = /usr/local/include
+BOOST_LIB_DIR = /usr/local/lib
 
 isEqual(DEBUG,0){
     DEFINES += WIZ_RELEASE
@@ -34,30 +37,27 @@ INCLUDEPATH +=  . \
                 $$INC_DIR/utils \
                 $$INC_DIR/$$PAGES_DIR \
                 $$INC_DIR/$$GENER_DIR \
-                $$NODE_GRAPH_DIR/include
+                $$NODE_GRAPH_DIR/include \
 
 unix:!macx{
     DEFINES += LINUX
     # include path for boost
-    INCLUDEPATH += /usr/local/include
+    INCLUDEPATH += $$BOOST_INCLUDE_DIR
     # boost filesystem libraries
-    isEqual(UNIBUILD,0){
-        LIBS += -L/usr/local/lib -lboost_filesystem -lboost_system
+    isEqual(NOMAYABUILD,1){
         DEFINES += SKIP_MAYA_TEST
     }
-    isEqual(UNIBUILD,1){
-        LIBS += -L/usr/lib -lboost_filesystem -lboost_system
-    }
+    LIBS += -L$$BOOST_LIB_DIR -lboost_filesystem -lboost_system
     LIBS += -L$$NODE_GRAPH_DIR/lib/linux -lNodeGraph
 }
 macx:{
     DEFINES += DARWIN
     # include path for boost
-    INCLUDEPATH += /usr/local/include
+    INCLUDEPATH += $$BOOST_INCLUDE_DIR
     # add frameworks required
     LIBS += -framework Cocoa
     # boost filesystem libraries
-    LIBS += -L/usr/local/lib -lboost_filesystem -lboost_system
+    LIBS += -L$$BOOST_LIB_DIR -lboost_filesystem -lboost_system
     # include the libraries for the NodeGraph
     LIBS += -L$$NODE_GRAPH_DIR/lib/macosx -lNodeGraph
 }
