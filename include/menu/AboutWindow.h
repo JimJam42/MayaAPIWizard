@@ -1,6 +1,14 @@
 #ifndef __ABOUTWINDOW_H__
 #define __ABOUTWINDOW_H__
 
+/// @file About.h
+/// @brief About Window to give some development information and contact information
+/// @author Callum James
+/// @version 1.0
+/// @date 19/06/2014
+/// Revision History:
+/// Initial Version 19/06/2014
+
 #include <QDialog>
 
 namespace Ui
